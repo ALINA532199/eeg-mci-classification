@@ -1,0 +1,9494 @@
+{
+  "seed": 42,
+  "reference_channels": [
+    "M1",
+    "M2"
+  ],
+  "scalp_channels": null,
+  "eegnet_channels": [
+    "F3",
+    "Fz",
+    "F4",
+    "FC3",
+    "FCz",
+    "FC4",
+    "P3",
+    "Pz",
+    "P4",
+    "PO7",
+    "Oz",
+    "PO8"
+  ],
+  "eog_channels": [],
+  "ecg_channels": [],
+  "montage": "standard_1020",
+  "notch_hz": [
+    50
+  ],
+  "notch_width_hz": 4,
+  "highpass": 0.1,
+  "lowpass": 30,
+  "ica_components": 0.99,
+  "ica_fit_highpass": 1.0,
+  "ica_method": "fastica",
+  "ica_max_iter": 1000,
+  "event_id": {
+    "probe": 1
+  },
+  "epoch": [
+    -0.5,
+    1
+  ],
+  "baseline": [
+    -0.5,
+    0
+  ],
+  "sfreq": null,
+  "minimum_trials": 10,
+  "reject_absolute_uv": 80,
+  "eegnet_window": [
+    0,
+    1
+  ],
+  "behavior_columns": [
+    "ACC",
+    "RT_seconds",
+    "IES_seconds"
+  ],
+  "features": {
+    "seed": 42,
+    "rois": {
+      "Frontal": [
+        "F3",
+        "Fz",
+        "F4"
+      ],
+      "FrontalCentral": [
+        "FC3",
+        "FCz",
+        "FC4"
+      ],
+      "Parietal": [
+        "P3",
+        "Pz",
+        "P4"
+      ],
+      "Occipital": [
+        "PO7",
+        "Oz",
+        "PO8"
+      ]
+    },
+    "erp": [
+      {
+        "name": "ERP_N1_Occipital_amplitude",
+        "roi": "Occipital",
+        "window": [
+          0.11,
+          0.17
+        ],
+        "measure": "amplitude",
+        "polarity": "negative"
+      },
+      {
+        "name": "ERP_N1_Occipital_latency",
+        "roi": "Occipital",
+        "window": [
+          0.11,
+          0.17
+        ],
+        "measure": "latency",
+        "polarity": "negative"
+      },
+      {
+        "name": "ERP_P2_Frontal_amplitude",
+        "roi": "Frontal",
+        "window": [
+          0.19,
+          0.25
+        ],
+        "measure": "amplitude",
+        "polarity": "positive"
+      },
+      {
+        "name": "ERP_P2_Frontal_latency",
+        "roi": "Frontal",
+        "window": [
+          0.19,
+          0.25
+        ],
+        "measure": "latency",
+        "polarity": "positive"
+      },
+      {
+        "name": "ERP_P2_FrontalCentral_amplitude",
+        "roi": "FrontalCentral",
+        "window": [
+          0.19,
+          0.25
+        ],
+        "measure": "amplitude",
+        "polarity": "positive"
+      },
+      {
+        "name": "ERP_P2_FrontalCentral_latency",
+        "roi": "FrontalCentral",
+        "window": [
+          0.19,
+          0.25
+        ],
+        "measure": "latency",
+        "polarity": "positive"
+      },
+      {
+        "name": "ERP_N2_Frontal_amplitude",
+        "roi": "Frontal",
+        "window": [
+          0.24,
+          0.29
+        ],
+        "measure": "amplitude",
+        "polarity": "negative"
+      },
+      {
+        "name": "ERP_N2_Frontal_latency",
+        "roi": "Frontal",
+        "window": [
+          0.24,
+          0.29
+        ],
+        "measure": "latency",
+        "polarity": "negative"
+      },
+      {
+        "name": "ERP_N2_FrontalCentral_amplitude",
+        "roi": "FrontalCentral",
+        "window": [
+          0.24,
+          0.29
+        ],
+        "measure": "amplitude",
+        "polarity": "negative"
+      },
+      {
+        "name": "ERP_N2_FrontalCentral_latency",
+        "roi": "FrontalCentral",
+        "window": [
+          0.24,
+          0.29
+        ],
+        "measure": "latency",
+        "polarity": "negative"
+      },
+      {
+        "name": "ERP_P3_Parietal_amplitude",
+        "roi": "Parietal",
+        "window": [
+          0.35,
+          0.55
+        ],
+        "measure": "amplitude",
+        "polarity": "positive"
+      },
+      {
+        "name": "ERP_P3_Parietal_latency",
+        "roi": "Parietal",
+        "window": [
+          0.35,
+          0.55
+        ],
+        "measure": "latency",
+        "polarity": "positive"
+      }
+    ],
+    "tf": [
+      {
+        "name": "TF_Frontal_Theta_N1",
+        "roi": "Frontal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Theta/N1"
+      },
+      {
+        "name": "TF_FrontalCentral_Theta_N1",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Theta/N1"
+      },
+      {
+        "name": "TF_Parietal_Theta_N1",
+        "roi": "Parietal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Theta/N1"
+      },
+      {
+        "name": "TF_Occipital_Theta_N1",
+        "roi": "Occipital",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Theta/N1"
+      },
+      {
+        "name": "TF_Frontal_Theta_P2",
+        "roi": "Frontal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Theta/P2"
+      },
+      {
+        "name": "TF_FrontalCentral_Theta_P2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Theta/P2"
+      },
+      {
+        "name": "TF_Parietal_Theta_P2",
+        "roi": "Parietal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Theta/P2"
+      },
+      {
+        "name": "TF_Occipital_Theta_P2",
+        "roi": "Occipital",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Theta/P2"
+      },
+      {
+        "name": "TF_Frontal_Theta_N2",
+        "roi": "Frontal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Theta/N2"
+      },
+      {
+        "name": "TF_FrontalCentral_Theta_N2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Theta/N2"
+      },
+      {
+        "name": "TF_Parietal_Theta_N2",
+        "roi": "Parietal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Theta/N2"
+      },
+      {
+        "name": "TF_Occipital_Theta_N2",
+        "roi": "Occipital",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Theta/N2"
+      },
+      {
+        "name": "TF_Frontal_Theta_P3",
+        "roi": "Frontal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Theta/P3"
+      },
+      {
+        "name": "TF_FrontalCentral_Theta_P3",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Theta/P3"
+      },
+      {
+        "name": "TF_Parietal_Theta_P3",
+        "roi": "Parietal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Theta/P3"
+      },
+      {
+        "name": "TF_Occipital_Theta_P3",
+        "roi": "Occipital",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Theta/P3"
+      },
+      {
+        "name": "TF_Frontal_Theta_T0",
+        "roi": "Frontal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Theta/T0"
+      },
+      {
+        "name": "TF_FrontalCentral_Theta_T0",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Theta/T0"
+      },
+      {
+        "name": "TF_Parietal_Theta_T0",
+        "roi": "Parietal",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Theta/T0"
+      },
+      {
+        "name": "TF_Occipital_Theta_T0",
+        "roi": "Occipital",
+        "frequencies": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Theta/T0"
+      },
+      {
+        "name": "TF_Frontal_Low_Alpha_N1",
+        "roi": "Frontal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Low_Alpha/N1"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Alpha_N1",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Low_Alpha/N1"
+      },
+      {
+        "name": "TF_Parietal_Low_Alpha_N1",
+        "roi": "Parietal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Low_Alpha/N1"
+      },
+      {
+        "name": "TF_Occipital_Low_Alpha_N1",
+        "roi": "Occipital",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Low_Alpha/N1"
+      },
+      {
+        "name": "TF_Frontal_Low_Alpha_P2",
+        "roi": "Frontal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Low_Alpha/P2"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Alpha_P2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Low_Alpha/P2"
+      },
+      {
+        "name": "TF_Parietal_Low_Alpha_P2",
+        "roi": "Parietal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Low_Alpha/P2"
+      },
+      {
+        "name": "TF_Occipital_Low_Alpha_P2",
+        "roi": "Occipital",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Low_Alpha/P2"
+      },
+      {
+        "name": "TF_Frontal_Low_Alpha_N2",
+        "roi": "Frontal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Low_Alpha/N2"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Alpha_N2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Low_Alpha/N2"
+      },
+      {
+        "name": "TF_Parietal_Low_Alpha_N2",
+        "roi": "Parietal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Low_Alpha/N2"
+      },
+      {
+        "name": "TF_Occipital_Low_Alpha_N2",
+        "roi": "Occipital",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Low_Alpha/N2"
+      },
+      {
+        "name": "TF_Frontal_Low_Alpha_P3",
+        "roi": "Frontal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Low_Alpha/P3"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Alpha_P3",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Low_Alpha/P3"
+      },
+      {
+        "name": "TF_Parietal_Low_Alpha_P3",
+        "roi": "Parietal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Low_Alpha/P3"
+      },
+      {
+        "name": "TF_Occipital_Low_Alpha_P3",
+        "roi": "Occipital",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Low_Alpha/P3"
+      },
+      {
+        "name": "TF_Frontal_Low_Alpha_T0",
+        "roi": "Frontal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Low_Alpha/T0"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Alpha_T0",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Low_Alpha/T0"
+      },
+      {
+        "name": "TF_Parietal_Low_Alpha_T0",
+        "roi": "Parietal",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Low_Alpha/T0"
+      },
+      {
+        "name": "TF_Occipital_Low_Alpha_T0",
+        "roi": "Occipital",
+        "frequencies": [
+          8,
+          9,
+          10
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Low_Alpha/T0"
+      },
+      {
+        "name": "TF_Frontal_High_Alpha_N1",
+        "roi": "Frontal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/High_Alpha/N1"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Alpha_N1",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/High_Alpha/N1"
+      },
+      {
+        "name": "TF_Parietal_High_Alpha_N1",
+        "roi": "Parietal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/High_Alpha/N1"
+      },
+      {
+        "name": "TF_Occipital_High_Alpha_N1",
+        "roi": "Occipital",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/High_Alpha/N1"
+      },
+      {
+        "name": "TF_Frontal_High_Alpha_P2",
+        "roi": "Frontal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/High_Alpha/P2"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Alpha_P2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/High_Alpha/P2"
+      },
+      {
+        "name": "TF_Parietal_High_Alpha_P2",
+        "roi": "Parietal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/High_Alpha/P2"
+      },
+      {
+        "name": "TF_Occipital_High_Alpha_P2",
+        "roi": "Occipital",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/High_Alpha/P2"
+      },
+      {
+        "name": "TF_Frontal_High_Alpha_N2",
+        "roi": "Frontal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/High_Alpha/N2"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Alpha_N2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/High_Alpha/N2"
+      },
+      {
+        "name": "TF_Parietal_High_Alpha_N2",
+        "roi": "Parietal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/High_Alpha/N2"
+      },
+      {
+        "name": "TF_Occipital_High_Alpha_N2",
+        "roi": "Occipital",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/High_Alpha/N2"
+      },
+      {
+        "name": "TF_Frontal_High_Alpha_P3",
+        "roi": "Frontal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/High_Alpha/P3"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Alpha_P3",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/High_Alpha/P3"
+      },
+      {
+        "name": "TF_Parietal_High_Alpha_P3",
+        "roi": "Parietal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/High_Alpha/P3"
+      },
+      {
+        "name": "TF_Occipital_High_Alpha_P3",
+        "roi": "Occipital",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/High_Alpha/P3"
+      },
+      {
+        "name": "TF_Frontal_High_Alpha_T0",
+        "roi": "Frontal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/High_Alpha/T0"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Alpha_T0",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/High_Alpha/T0"
+      },
+      {
+        "name": "TF_Parietal_High_Alpha_T0",
+        "roi": "Parietal",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/High_Alpha/T0"
+      },
+      {
+        "name": "TF_Occipital_High_Alpha_T0",
+        "roi": "Occipital",
+        "frequencies": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/High_Alpha/T0"
+      },
+      {
+        "name": "TF_Frontal_Low_Beta_N1",
+        "roi": "Frontal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Low_Beta/N1"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Beta_N1",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Low_Beta/N1"
+      },
+      {
+        "name": "TF_Parietal_Low_Beta_N1",
+        "roi": "Parietal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Low_Beta/N1"
+      },
+      {
+        "name": "TF_Occipital_Low_Beta_N1",
+        "roi": "Occipital",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/Low_Beta/N1"
+      },
+      {
+        "name": "TF_Frontal_Low_Beta_P2",
+        "roi": "Frontal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Low_Beta/P2"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Beta_P2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Low_Beta/P2"
+      },
+      {
+        "name": "TF_Parietal_Low_Beta_P2",
+        "roi": "Parietal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Low_Beta/P2"
+      },
+      {
+        "name": "TF_Occipital_Low_Beta_P2",
+        "roi": "Occipital",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/Low_Beta/P2"
+      },
+      {
+        "name": "TF_Frontal_Low_Beta_N2",
+        "roi": "Frontal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Low_Beta/N2"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Beta_N2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Low_Beta/N2"
+      },
+      {
+        "name": "TF_Parietal_Low_Beta_N2",
+        "roi": "Parietal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Low_Beta/N2"
+      },
+      {
+        "name": "TF_Occipital_Low_Beta_N2",
+        "roi": "Occipital",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/Low_Beta/N2"
+      },
+      {
+        "name": "TF_Frontal_Low_Beta_P3",
+        "roi": "Frontal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Low_Beta/P3"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Beta_P3",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Low_Beta/P3"
+      },
+      {
+        "name": "TF_Parietal_Low_Beta_P3",
+        "roi": "Parietal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Low_Beta/P3"
+      },
+      {
+        "name": "TF_Occipital_Low_Beta_P3",
+        "roi": "Occipital",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/Low_Beta/P3"
+      },
+      {
+        "name": "TF_Frontal_Low_Beta_T0",
+        "roi": "Frontal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Low_Beta/T0"
+      },
+      {
+        "name": "TF_FrontalCentral_Low_Beta_T0",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Low_Beta/T0"
+      },
+      {
+        "name": "TF_Parietal_Low_Beta_T0",
+        "roi": "Parietal",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Low_Beta/T0"
+      },
+      {
+        "name": "TF_Occipital_Low_Beta_T0",
+        "roi": "Occipital",
+        "frequencies": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/Low_Beta/T0"
+      },
+      {
+        "name": "TF_Frontal_High_Beta_N1",
+        "roi": "Frontal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/High_Beta/N1"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Beta_N1",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/High_Beta/N1"
+      },
+      {
+        "name": "TF_Parietal_High_Beta_N1",
+        "roi": "Parietal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/High_Beta/N1"
+      },
+      {
+        "name": "TF_Occipital_High_Beta_N1",
+        "roi": "Occipital",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "TF/High_Beta/N1"
+      },
+      {
+        "name": "TF_Frontal_High_Beta_P2",
+        "roi": "Frontal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/High_Beta/P2"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Beta_P2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/High_Beta/P2"
+      },
+      {
+        "name": "TF_Parietal_High_Beta_P2",
+        "roi": "Parietal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/High_Beta/P2"
+      },
+      {
+        "name": "TF_Occipital_High_Beta_P2",
+        "roi": "Occipital",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "TF/High_Beta/P2"
+      },
+      {
+        "name": "TF_Frontal_High_Beta_N2",
+        "roi": "Frontal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/High_Beta/N2"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Beta_N2",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/High_Beta/N2"
+      },
+      {
+        "name": "TF_Parietal_High_Beta_N2",
+        "roi": "Parietal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/High_Beta/N2"
+      },
+      {
+        "name": "TF_Occipital_High_Beta_N2",
+        "roi": "Occipital",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "TF/High_Beta/N2"
+      },
+      {
+        "name": "TF_Frontal_High_Beta_P3",
+        "roi": "Frontal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/High_Beta/P3"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Beta_P3",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/High_Beta/P3"
+      },
+      {
+        "name": "TF_Parietal_High_Beta_P3",
+        "roi": "Parietal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/High_Beta/P3"
+      },
+      {
+        "name": "TF_Occipital_High_Beta_P3",
+        "roi": "Occipital",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "TF/High_Beta/P3"
+      },
+      {
+        "name": "TF_Frontal_High_Beta_T0",
+        "roi": "Frontal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/High_Beta/T0"
+      },
+      {
+        "name": "TF_FrontalCentral_High_Beta_T0",
+        "roi": "FrontalCentral",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/High_Beta/T0"
+      },
+      {
+        "name": "TF_Parietal_High_Beta_T0",
+        "roi": "Parietal",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/High_Beta/T0"
+      },
+      {
+        "name": "TF_Occipital_High_Beta_T0",
+        "roi": "Occipital",
+        "frequencies": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "all_frequencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "baseline": [
+          -0.5,
+          0
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "TF/High_Beta/T0"
+      }
+    ],
+    "connectivity": [
+      {
+        "name": "dwPLI2_Theta_N1_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Theta/N1"
+      },
+      {
+        "name": "dwPLI2_Theta_N1_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Theta/N1"
+      },
+      {
+        "name": "dwPLI2_Theta_N1_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Theta/N1"
+      },
+      {
+        "name": "dwPLI2_Theta_N1_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Theta/N1"
+      },
+      {
+        "name": "dwPLI2_Theta_N1_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Theta/N1"
+      },
+      {
+        "name": "dwPLI2_Theta_N1_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Theta/N1"
+      },
+      {
+        "name": "dwPLI2_Theta_P2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Theta/P2"
+      },
+      {
+        "name": "dwPLI2_Theta_P2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Theta/P2"
+      },
+      {
+        "name": "dwPLI2_Theta_P2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Theta/P2"
+      },
+      {
+        "name": "dwPLI2_Theta_P2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Theta/P2"
+      },
+      {
+        "name": "dwPLI2_Theta_P2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Theta/P2"
+      },
+      {
+        "name": "dwPLI2_Theta_P2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Theta/P2"
+      },
+      {
+        "name": "dwPLI2_Theta_N2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Theta/N2"
+      },
+      {
+        "name": "dwPLI2_Theta_N2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Theta/N2"
+      },
+      {
+        "name": "dwPLI2_Theta_N2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Theta/N2"
+      },
+      {
+        "name": "dwPLI2_Theta_N2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Theta/N2"
+      },
+      {
+        "name": "dwPLI2_Theta_N2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Theta/N2"
+      },
+      {
+        "name": "dwPLI2_Theta_N2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Theta/N2"
+      },
+      {
+        "name": "dwPLI2_Theta_P3_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Theta/P3"
+      },
+      {
+        "name": "dwPLI2_Theta_P3_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Theta/P3"
+      },
+      {
+        "name": "dwPLI2_Theta_P3_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Theta/P3"
+      },
+      {
+        "name": "dwPLI2_Theta_P3_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Theta/P3"
+      },
+      {
+        "name": "dwPLI2_Theta_P3_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Theta/P3"
+      },
+      {
+        "name": "dwPLI2_Theta_P3_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Theta/P3"
+      },
+      {
+        "name": "dwPLI2_Theta_T0_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Theta/T0"
+      },
+      {
+        "name": "dwPLI2_Theta_T0_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Theta/T0"
+      },
+      {
+        "name": "dwPLI2_Theta_T0_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Theta/T0"
+      },
+      {
+        "name": "dwPLI2_Theta_T0_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Theta/T0"
+      },
+      {
+        "name": "dwPLI2_Theta_T0_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Theta/T0"
+      },
+      {
+        "name": "dwPLI2_Theta_T0_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Theta/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N1_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N1_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N1_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N1_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N1_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N1_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_N2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P3_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P3_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P3_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P3_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P3_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_P3_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_T0_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_T0_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_T0_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_T0_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_T0_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Alpha_T0_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N1_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N1_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N1_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N1_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N1_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N1_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Alpha/N1"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Alpha/P2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_N2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Alpha/N2"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P3_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P3_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P3_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P3_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P3_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_P3_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Alpha/P3"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_T0_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_T0_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_T0_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_T0_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_T0_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_High_Alpha_T0_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Alpha/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N1_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N1_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N1_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N1_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N1_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N1_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/Low_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/Low_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_N2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/Low_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P3_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P3_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P3_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P3_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P3_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_P3_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/Low_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_T0_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_T0_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_T0_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_T0_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_T0_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_Low_Beta_T0_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/Low_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N1_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N1_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N1_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N1_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N1_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N1_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "testing_family": "dwPLI/High_Beta/N1"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "testing_family": "dwPLI/High_Beta/P2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N2_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N2_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N2_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N2_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N2_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_N2_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "testing_family": "dwPLI/High_Beta/N2"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P3_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P3_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P3_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P3_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P3_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_High_Beta_P3_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "testing_family": "dwPLI/High_Beta/P3"
+      },
+      {
+        "name": "dwPLI2_High_Beta_T0_Frontal_Parietal",
+        "roi_a": "Frontal",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_High_Beta_T0_Frontal_Occipital",
+        "roi_a": "Frontal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_High_Beta_T0_FrontalCentral_Parietal",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Parietal",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_High_Beta_T0_FrontalCentral_Occipital",
+        "roi_a": "FrontalCentral",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_High_Beta_T0_Frontal_FrontalCentral",
+        "roi_a": "Frontal",
+        "roi_b": "FrontalCentral",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Beta/T0"
+      },
+      {
+        "name": "dwPLI2_High_Beta_T0_Parietal_Occipital",
+        "roi_a": "Parietal",
+        "roi_b": "Occipital",
+        "band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "testing_family": "dwPLI/High_Beta/T0"
+      }
+    ],
+    "pac": [
+      {
+        "name": "PAC_DeltaTheta_N1_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/N1"
+      },
+      {
+        "name": "PAC_DeltaTheta_N1_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/N1"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_N1_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/N1"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_N1_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/N1"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_N1_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/N1"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_N1_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/N1"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_N1_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/N1"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_N1_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/N1"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_N1_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/N1"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_N1_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/N1"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_N1_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/N1"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_N1_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/N1"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_N1_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/N1"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_N1_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.11,
+          0.17
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/N1"
+      },
+      {
+        "name": "PAC_DeltaTheta_P2_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/P2"
+      },
+      {
+        "name": "PAC_DeltaTheta_P2_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/P2"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_P2_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/P2"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_P2_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/P2"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_P2_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/P2"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_P2_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/P2"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_P2_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/P2"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_P2_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/P2"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_P2_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/P2"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_P2_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/P2"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_P2_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/P2"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_P2_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/P2"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_P2_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/P2"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_P2_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.19,
+          0.25
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/P2"
+      },
+      {
+        "name": "PAC_DeltaTheta_N2_Frontal_Frontal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/N2"
+      },
+      {
+        "name": "PAC_DeltaTheta_N2_Frontal_FrontalCentral",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/N2"
+      },
+      {
+        "name": "PAC_DeltaTheta_N2_FrontalCentral_Frontal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/N2"
+      },
+      {
+        "name": "PAC_DeltaTheta_N2_FrontalCentral_FrontalCentral",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/N2"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_N2_Frontal_Frontal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/N2"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_N2_Frontal_FrontalCentral",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/N2"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_N2_FrontalCentral_Frontal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/N2"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_N2_FrontalCentral_FrontalCentral",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/N2"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_N2_Frontal_Frontal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/N2"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_N2_Frontal_FrontalCentral",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/N2"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_N2_FrontalCentral_Frontal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/N2"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_N2_FrontalCentral_FrontalCentral",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/N2"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_N2_Frontal_Frontal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/N2"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_N2_Frontal_FrontalCentral",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/N2"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_N2_FrontalCentral_Frontal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/N2"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_N2_FrontalCentral_FrontalCentral",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/N2"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_N2_Frontal_Frontal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/N2"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_N2_Frontal_FrontalCentral",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/N2"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_N2_FrontalCentral_Frontal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/N2"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_N2_FrontalCentral_FrontalCentral",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/N2"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_N2_Frontal_Frontal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/N2"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_N2_Frontal_FrontalCentral",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/N2"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_N2_FrontalCentral_Frontal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/N2"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_N2_FrontalCentral_FrontalCentral",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/N2"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_N2_Frontal_Frontal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/N2"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_N2_Frontal_FrontalCentral",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/N2"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_N2_FrontalCentral_Frontal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Frontal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/N2"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_N2_FrontalCentral_FrontalCentral",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "FrontalCentral",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.24,
+          0.29
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/N2"
+      },
+      {
+        "name": "PAC_DeltaTheta_P3_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/P3"
+      },
+      {
+        "name": "PAC_DeltaTheta_P3_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/P3"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_P3_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/P3"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_P3_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/P3"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_P3_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/P3"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_P3_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/P3"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_P3_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/P3"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_P3_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/P3"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_P3_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/P3"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_P3_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/P3"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_P3_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/P3"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_P3_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/P3"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_P3_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/P3"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_P3_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0.35,
+          0.55
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/P3"
+      },
+      {
+        "name": "PAC_DeltaTheta_T0_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/T0"
+      },
+      {
+        "name": "PAC_DeltaTheta_T0_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/T0"
+      },
+      {
+        "name": "PAC_DeltaTheta_T0_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/T0"
+      },
+      {
+        "name": "PAC_DeltaTheta_T0_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          4,
+          8
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaTheta/T0"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_T0_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/T0"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_T0_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/T0"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_T0_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/T0"
+      },
+      {
+        "name": "PAC_DeltaLowBeta_T0_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaLowBeta/T0"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_T0_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/T0"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_T0_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/T0"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_T0_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/T0"
+      },
+      {
+        "name": "PAC_DeltaHighBeta_T0_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          1,
+          4
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/DeltaHighBeta/T0"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_T0_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/T0"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_T0_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/T0"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_T0_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/T0"
+      },
+      {
+        "name": "PAC_ThetaLowAlpha_T0_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          8,
+          10
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowAlpha/T0"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_T0_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/T0"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_T0_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/T0"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_T0_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/T0"
+      },
+      {
+        "name": "PAC_ThetaHighAlpha_T0_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          10,
+          13
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighAlpha/T0"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_T0_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/T0"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_T0_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/T0"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_T0_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/T0"
+      },
+      {
+        "name": "PAC_ThetaLowBeta_T0_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          13,
+          20
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaLowBeta/T0"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_T0_Frontal_Occipital",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/T0"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_T0_Frontal_Parietal",
+        "phase_roi": "Frontal",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/T0"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_T0_FrontalCentral_Occipital",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Occipital",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/T0"
+      },
+      {
+        "name": "PAC_ThetaHighBeta_T0_FrontalCentral_Parietal",
+        "phase_roi": "FrontalCentral",
+        "amplitude_roi": "Parietal",
+        "phase_band": [
+          4,
+          8
+        ],
+        "amplitude_band": [
+          20,
+          30
+        ],
+        "window": [
+          0,
+          1
+        ],
+        "surrogates": 200,
+        "testing_family": "PAC/ThetaHighBeta/T0"
+      }
+    ],
+    "dwpli_estimator": "pooled_time"
+  }
+}

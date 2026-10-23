@@ -1,0 +1,2 @@
+subject_id,clinical_label,raw_file,bad_channels,bad_segments
+replace_with_pseudonym,0,private_recording.fif,[],[]

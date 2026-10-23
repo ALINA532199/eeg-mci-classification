@@ -1,0 +1,56 @@
+{
+  "seed": 42,
+  "permutation_seed": 728419,
+  "folds": 5,
+  "repeats": 10,
+  "inner_folds": 5,
+  "pilots": 3,
+  "permutations": 1000,
+  "reproduction_tolerance": 1e-07,
+  "selection": {
+    "alpha": 0.05,
+    "correlation": 0.7,
+    "permutations": 5000,
+    "caps": {
+      "ERP": null,
+      "TF": null,
+      "PAC": null,
+      "dwPLI": null
+    }
+  },
+  "base": {
+    "C": 1.0,
+    "trees": 200,
+    "max_depth": 5,
+    "boosting_trees": 100
+  },
+  "meta_C": 1.0,
+  "mlp": {
+    "hidden": [
+      64,
+      32
+    ],
+    "max_iter": 2000
+  },
+  "pca_components": 8,
+  "deep": {
+    "epochs": 50,
+    "trials_per_subject": 30,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "threads": 1,
+    "device": "cpu",
+    "network": {
+      "f1": 8,
+      "depth": 2,
+      "f2": 16,
+      "kernel": 32,
+      "dropout": 0.5
+    },
+    "early_stopping": true,
+    "validation_fraction": 0.25,
+    "patience": 10,
+    "min_delta": 0.0
+  },
+  "behavior_test": "welch"
+}
