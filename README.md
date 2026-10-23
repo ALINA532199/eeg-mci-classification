@@ -1,6 +1,6 @@
 # Subject-level EEG classification
 
-[中文说明](README.zh-CN.md)
+[中文说明](mci-eeg-manuscript-aligned/README.zh-CN.md)
 
 Python tools for M1/M2-referenced EEG preprocessing, handcrafted features,
 P1–P6 classification, full-pipeline permutation testing and post-hoc SHAP.
@@ -25,11 +25,14 @@ P1–P6 classification, full-pipeline permutation testing and post-hoc SHAP.
 The inner Stacking probabilities condition on outer-training representations.
 Only outer OOF predictions evaluate the complete feature-learning pipeline.
 Short-window PAC and pooled-time dwPLI2 require the limitations and sensitivity
-assessment described in [the methods](docs/METHODS_EN.md).
+assessment described in [the methods](mci-eeg-manuscript-aligned/docs/METHODS_EN.md).
 
 ## Install and test
 
+From a terminal in the downloaded or cloned repository root, enter the package directory first. Run all subsequent commands from this directory.
+
 ```console
+cd mci-eeg-manuscript-aligned
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 # Linux/macOS: source .venv/bin/activate
@@ -37,7 +40,7 @@ python -m pip install -e .
 python -m unittest discover -s tests -v
 ```
 
-Python >=3.11. CPU is the default. See [validation scope](docs/VALIDATION.md).
+Python >=3.11. CPU is the default. See [validation scope](mci-eeg-manuscript-aligned/docs/VALIDATION.md).
 
 ## Synthetic demonstration
 
@@ -57,7 +60,7 @@ rate in a private copy of `configs/preprocessing_example.json`. A null
 `scalp_channels` selects all available scalp EEG except M1/M2; it does not force a
 particular channel count. `eegnet_channels` is a separate ordered list of 12
 channels. A null `sfreq` preserves the recording rate. See the
-[data contract](docs/DATA_FORMAT.md) and [ICA instructions](docs/ICA_REVIEW.zh-CN.md).
+[data contract](mci-eeg-manuscript-aligned/docs/DATA_FORMAT.md) and [ICA instructions](mci-eeg-manuscript-aligned/docs/ICA_REVIEW.zh-CN.md).
 
 ```console
 mci-eeg ica-review --manifest private/manifest.csv --config private/preprocessing.json --output private/ica_review
@@ -86,11 +89,12 @@ appropriate restricted design for matched, familial or site-restricted samples.
 
 ## Documentation and release
 
-- [Manuscript correspondence and unresolved settings](docs/MANUSCRIPT_ALIGNMENT.md)
-- [English methods](docs/METHODS_EN.md) / [Chinese methods](docs/METHODS_ZH.md)
-- [GitHub/Zenodo release](docs/RELEASE.md)
+- [Manuscript correspondence and unresolved settings](mci-eeg-manuscript-aligned/docs/MANUSCRIPT_ALIGNMENT.md)
+- [English methods](mci-eeg-manuscript-aligned/docs/METHODS_EN.md) / [Chinese methods](mci-eeg-manuscript-aligned/docs/METHODS_ZH.md)
+- [GitHub/Zenodo release](mci-eeg-manuscript-aligned/docs/RELEASE.md)
 
 Domain caps are configurable but not numerically specified in the supplied
 manuscript. `null` currently means no cap; finalize these values before using a
 capped-feature protocol. SHAP uses separate full-data Stacking interpretation
 models, not OOF model explanations. Patient data are not included. MIT license.
+
